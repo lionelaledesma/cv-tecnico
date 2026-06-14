@@ -1,4 +1,8 @@
 /* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, Verdana;
     margin: 0;
@@ -34,8 +38,11 @@ section {
     border-width: medium;
     border-style: double;
     border-color: #34495e;
-    font: Arial;
-    align-content: center;
+}
+
+article:not(:last-child) {
+    border-bottom: 1px dashed #34495e;
+    padding-bottom: 20px;
 }
 
 /* Títulos */
@@ -55,10 +62,21 @@ ul {
     line-height: 25px;
 }
 
+/* Lista de contacto */
+.contacto {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contacto li {
+    margin-bottom: 10px;
+}
+
 /* Links */
 a {
-    color: blue;
-    text-decoration: underline;
+    color: #34495e;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
@@ -72,25 +90,8 @@ p {
     margin-bottom: 10px;
 }
 
-.contenedor-padre{
-    display: flex;
-    justify-content: space-around;
-    gap: 50px;
-    align-self: start;
-}
-
-.columna{
-    flex: 1;
-    align-content: flex-start;
-}
-
 /* Footer */
 footer {
     text-align: center;
     font-size: 14px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
 }
