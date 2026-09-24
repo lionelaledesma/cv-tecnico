@@ -95,3 +95,9 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+@media (max-width: 768px) {
+    #email {
+        font-size: 14px;
+    }
+}
