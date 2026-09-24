@@ -27,6 +27,26 @@ header {
     border-radius: 5px;
     font-size: 20px;
     line-height: 0.5;
+    padding: 20px; 
+    position: relative;
+}
+
+.btn-descarga {
+    display: inline-block;
+    padding: 8px;
+    background-color: #62768a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.btn-descarga svg {
+    width: 14px;
+    height: 14px;
+    display: block;
 }
 
 /* Secciones */
