@@ -3,6 +3,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scrollbar-color: #34495e #85a0bb;
+    scrollbar-width: auto;
+}
+
 body {
     font-family: Arial, Verdana;
     margin: 0;
@@ -11,7 +16,7 @@ body {
 }
 
 /* Contenedor general */
-header, main, footer {
+.header-info, main, footer {
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -19,7 +24,12 @@ header, main, footer {
 }
 
 /* Header */
-header {
+.header {
+    position: relative; 
+    width: 100%;
+}
+
+.header-info {
     background-color: #85a0bb;
     color: white;
     margin-top: 10px;
@@ -32,15 +42,15 @@ header {
 }
 
 .btn-descarga {
-    display: inline-block;
+    display: flex;
     padding: 8px;
-    background-color: #62768a;
+    background-color: #85a0bb;
     color: #ffffff;
     text-decoration: none;
     border-radius: 50%;
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    top: 20px;
 }
 
 .btn-descarga svg {
@@ -117,6 +127,11 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .btn-descarga {
+        border-color: #ffffff;
+        border: solid 1px;
+    }
+
     #email {
         font-size: 14px;
     }
